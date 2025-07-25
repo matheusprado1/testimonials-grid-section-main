@@ -100,3 +100,37 @@ body {
 .card__description-text {
   font-weight: 400;
 }
+
+@media (min-width: 90rem) {
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 6rem 10rem;
+  }
+
+  .card:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .card:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .card:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .card:nth-child(4) {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  .card:nth-child(5) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+}
