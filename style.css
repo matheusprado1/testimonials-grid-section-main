@@ -112,6 +112,9 @@ body {
   .card:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1;
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 10%;
   }
 
   .card:nth-child(2) {
